@@ -21,7 +21,7 @@ fetchUrls(urls).then(contents => {
     if (content.status === 'fulfilled') {
       console.log(content.value);
     } else {
-      console.log(content.reason);
+      console.error(content.reason);
     }
   });
 });
